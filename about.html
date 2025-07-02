@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Me | Shreya Tripathi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      /* ABOUT ME SECTION */
+      .about-section {
+        padding: 4rem 2rem;
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      .about-section h1 {
+        text-align: center;
+        color: #bb86fc;
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .about-section h2.typing {
+        text-align: center;
+        color: #ffdd57;
+        font-size: 1.3rem;
+        height: 30px;
+        margin-bottom: 1.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #ffdd57;
+        display: inline-block;
+      }
+
+      .about-content p {
+        color: #ccc;
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+
+      .about-content p.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .highlight {
+        color: #ffdd57;
+        font-weight: 500;
+      }
+
+      /* CARD CONSISTENCY 
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        padding: 0 2rem;
+        justify-items: center;
+      }
+
+      .card {
+        background: #000;
+        border: 1px solid #444;
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+      }
+
+      .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 1rem;
+        color: #ddd;
+        flex: 1;
+      }
+
+      .card-content h3 {
+        color: #bb86fc;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .tech-stack {
+        font-size: 0.85rem;
+        color: #aaa;
+        font-style: italic;
+      }
+
+      .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1rem 1rem;
+        font-size: 0.85rem;
+        color: #bbb;
+      }*/
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="logo">SHREYA TRIPATHI</a>
+      </div>
+      <div class="nav-right">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ABOUT ME -->
+    <section class="about-section">
+      <h1>About Me</h1>
+      <h2 class="typing" id="typing-text"></h2>
+      <div class="about-content">
+        <p class="fade-in">
+          Hi, I'm <strong>Shreya Tripathi</strong>, an undergraduate Computer
+          Science student who loves building intuitive, impactful technology. I
+          enjoy turning ideas into usable, scalable systems that blend clean
+          design with powerful backend architecture.
+        </p>
+        <p class="fade-in">
+          My interests lie at the intersection of
+          <span class="highlight">Full Stack Development</span> and
+          <span class="highlight">Machine Learning</span>. I enjoy crafting
+          seamless interfaces with React and Tailwind and building scalable APIs
+          using FastAPI and Node.js.
+        </p>
+        <p class="fade-in">
+          In <span class="highlight">AI & ML</span>, I have worked on projects
+          like <em>resume parsing using BERT</em>,
+          <em>layoff prediction with BiLSTM & XGBoost</em>, and
+          <em>gesture recognition using OpenCV</em>. I love building explainable
+          models for practical, real-world applications.
+        </p>
+        <p class="fade-in">
+          I am passionate about
+          <span class="highlight"
+            >problem-solving and competitive programming</span
+          >, strengthening my skills in <em>Java DSA</em> and algorithm design
+          to create efficient, clean code.
+        </p>
+        <p class="fade-in">
+          I believe in <span class="highlight">continuous learning</span> and
+          collaboration and am excited to contribute to projects that challenge
+          me while delivering meaningful technology.
+        </p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="content">
+      <h1 style="text-align: center; margin-bottom: 2rem">Education</h1>
+      <div class="card-grid">
+        <div class="card">
+          <img src="assets/images/vit.png" alt="VIT Chennai" />
+          <div class="card-content">
+            <h3>B.Tech in Computer Science and Engineering</h3>
+            <p>Vellore Institute of Technology, Chennai Campus</p>
+            <div class="tech-stack">2021 – 2025 | CGPA: 7.25</div>
+          </div>
+          <div class="card-footer">
+            <span>Graduating 2025</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/school.png" alt="Brightlands" />
+          <div class="card-content">
+            <h3>Senior Secondary – ISC</h3>
+            <p>Brightlands School, Dehradun</p>
+            <div class="tech-stack">2020 – 2021 | PCM + CS</div>
+          </div>
+          <div class="card-footer">
+            <span>Class 12: 94.75%</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/school.png" alt="Brightlands" />
+          <div class="card-content">
+            <h3>High School – ICSE</h3>
+            <p>Brightlands School, Dehradun</p>
+            <div class="tech-stack">2018 – 2019 | Science + CS</div>
+          </div>
+          <div class="card-footer">
+            <span>Class 10: 94.4%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AREAS OF INTEREST 
+    <section class="content" style="margin-top: 3rem">
+      <h1 style="text-align: center; margin-bottom: 1.5rem">
+        Areas of Interest
+      </h1>
+      <div
+        style="
+          max-width: 850px;
+          margin: auto;
+          font-size: 1rem;
+          color: #d0cece;
+          line-height: 1.8;
+          text-align: left;
+        "
+      >
+        <p>
+          🛠️ <strong>Software Development:</strong> I love transforming ideas
+          into clean, efficient systems and building scalable software that
+          solves real problems. <br /><br />
+          🤖
+          <strong>Artificial Intelligence & Machine Learning:</strong> Building
+          practical, interpretable ML models for real-world use cases excites
+          me. <br /><br />
+          🌐 <strong>Full Stack Web Development:</strong> I enjoy creating
+          seamless user experiences paired with robust backend systems using
+          React, FastAPI, and Node.js. <br /><br />
+          ☁️ <strong>Cloud Computing:</strong> Exploring scalable, resilient
+          systems using AWS to deploy applications and manage machine learning
+          workflows.
+        </p>
+      </div>
+    </section>-->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:shreyatripathi0403@gmail.com"
+            >shreyatripathi0403@gmail.com</a
+          >
+        </div>
+        <div class="footer-right">
+          <a
+            href="https://github.com/shreya-t004"
+            target="_blank"
+            title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/shreya-tripathi-6a379a218"
+            target="_blank"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://leetcode.com/u/shreya_t004/"
+            target="_blank"
+            title="LeetCode"
+            ><i class="fas fa-code"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2025 Shreya Tripathi. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- JS FOR INTERACTIVITY -->
+    <script>
+      // Typing Animation
+      const typingText = document.getElementById("typing-text");
+      const phrases = [
+        "Full Stack Developer",
+        "ML Enthusiast",
+        "Problem Solver",
+        "Continuous Learner",
+      ];
+      let phraseIndex = 0,
+        letterIndex = 0,
+        isDeleting = false;
+      const typingSpeed = 120,
+        erasingSpeed = 80,
+        delayBetween = 1500;
+
+      function type() {
+        if (phraseIndex >= phrases.length) phraseIndex = 0;
+        const current = phrases[phraseIndex];
+        if (!isDeleting) {
+          typingText.textContent = current.substring(0, letterIndex + 1);
+          letterIndex++;
+          if (letterIndex === current.length) {
+            isDeleting = true;
+            setTimeout(type, delayBetween);
+          } else setTimeout(type, typingSpeed);
+        } else {
+          typingText.textContent = current.substring(0, letterIndex - 1);
+          letterIndex--;
+          if (letterIndex === 0) {
+            isDeleting = false;
+            phraseIndex++;
+          }
+          setTimeout(type, erasingSpeed);
+        }
+      }
+      document.addEventListener("DOMContentLoaded", type);
+
+      // Fade-in on scroll
+      const fadeInElements = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+      fadeInElements.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
