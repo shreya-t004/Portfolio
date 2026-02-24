@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
+
   <body>
     <header class="navbar">
       <div class="nav-left">
@@ -28,6 +29,7 @@
       </div>
     </header>
 
+    <!-- HERO / INTRO -->
     <section id="home" class="intro-section">
       <div class="intro-container">
         <img
@@ -35,118 +37,188 @@
           alt="Shreya's Photo"
           class="profile-pic-horizontal"
         />
+
         <div class="intro-text-horizontal">
-          <p>
-            I'm a passionate software developer with a strong foundation in Full
-            Stack Development and a deep curiosity for Artificial Intelligence
-            and Machine Learning. I love building intuitive, scalable
-            applications using modern frameworks, and enjoy crafting intelligent
-            solutions powered by data. With a background in competitive
-            programming and Java DSA, I thrive on solving challenging problems
-            and optimizing algorithms. My experience spans both backend systems
-            and intelligent automation, and I'm constantly exploring new ways to
-            bridge clean UI with powerful, data-driven backends. I aim to
-            contribute to innovative projects that push boundaries in web
-            engineering and intelligent systems.
+          <h1 class="intro-title">Junior Software Engineer</h1>
+          <p class="intro-subtitle">
+            Full Stack Development • Backend APIs • AI ML Systems
           </p>
-         
+
+          <p>
+            I am a Junior Software Engineer focused on building reliable,
+            scalable web applications and backend services. I work across modern
+            frontends such as React and Next.js, and I develop API-driven
+            backends using FastAPI, Flask, and Spring Boot. I emphasize clean
+            architecture, secure access patterns, and performance under real
+            workload conditions.
+          </p>
+
+          <p>
+            My AI and ML work centers on practical pipelines that connect model
+            capabilities to product workflows, including retrieval-augmented
+            generation systems with embedding creation, retrieval, and
+            evaluation. I also build with PostgreSQL using SQL connection pool
+            management, maintain database migrations, implement RBAC, and use
+            Kafka for event-driven processing where appropriate.
+          </p>
+
+          <div class="intro-cta">
+            <a href="projects.html" class="btn-primary">
+              <i class="fas fa-diagram-project"></i> View Projects
+            </a>
+            <a href="experience.html" class="btn-secondary">
+              <i class="fas fa-briefcase"></i> Experience
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- SKILLS OVERVIEW -->
     <section class="skills-overview" id="about">
       <h2>Skills Overview</h2>
       <p class="skills-intro">
-        A quick summary of my technical competencies and tools I use across Full
-        Stack Web Development, Software Development, and Languages and Tools.
+        A snapshot of the tools and technologies I use across frontend, backend,
+        databases, and AI ML pipelines.
       </p>
+
       <div class="skills-container">
+        <!-- FRONTEND -->
         <div class="skill-card">
-          <div class="icon-circle"><i class="fas fa-desktop"></i></div>
+          <div class="icon-circle"><i class="fas fa-laptop-code"></i></div>
           <h3>Frontend Development</h3>
           <p>
-            Creating responsive UIs using modern JS frameworks and UX
-            principles.
+            Building responsive, fast interfaces with a component-first
+            approach.
           </p>
           <ul>
             <li><strong>Languages:</strong> HTML, CSS, JavaScript</li>
-            <li><strong>Frameworks:</strong> React.js, TailwindCSS</li>
-            <li><strong>Tools:</strong> Vite, JSON, Responsive Design</li>
+            <li><strong>Frameworks:</strong> React.js, Next.js</li>
+            <li><strong>Styling:</strong> TailwindCSS</li>
+            <li><strong>Tooling:</strong> Vite, Component Design, Responsive UI</li>
           </ul>
         </div>
 
+        <!-- BACKEND / APIs -->
         <div class="skill-card">
           <div class="icon-circle"><i class="fas fa-server"></i></div>
           <h3>Backend & API Development</h3>
-          <p>Building scalable APIs and systems for web and AI applications.</p>
-          <ul>
-            <li><strong>Languages:</strong> Java, Python, Node.js</li>
-            <li><strong>Frameworks:</strong> FastAPI, Spring Boot</li>
-            <li>
-              <strong>Concepts:</strong> REST APIs, Microservices, TCP
-              Communication
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <div class="icon-circle"><i class="fas fa-brain"></i></div>
-          <h3>Artificial Intelligence & ML</h3>
-          <p>Designing predictive systems and explainable ML models.</p>
-          <ul>
-            <li><strong>Tech:</strong> BERT, BiLSTM, XGBoost, SHAP</li>
-            <li><strong>Libraries:</strong> OpenCV, scikit-learn</li>
-            <li>
-              <strong>Applications:</strong> Resume Parsing, Layoff Prediction,
-              Gesture Recognition
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <div class="icon-circle"><i class="fas fa-code"></i></div>
-          <h3>Problem Solving & Programming</h3>
-          <p>Focused on algorithmic thinking and optimized DSA solutions.</p>
-          <ul>
-            <li><strong>Languages:</strong> Java (OOP, DSA), Python, C</li>
-            <li>
-              <strong>Platforms:</strong> LeetCode, HackerRank (5-Star Java
-              Coder)
-            </li>
-            <li>
-              <strong>Topics:</strong> Competitive Coding, Data Structures,
-              Algorithms
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <div class="icon-circle"><i class="fas fa-tools"></i></div>
-          <h3>Tools & Technologies</h3>
           <p>
-            Technologies used for development, version control, and testing.
+            Designing APIs and services with security, scalability, and
+            maintainability in mind.
           </p>
           <ul>
-            <li><strong>Tools:</strong> Git, GitHub, Postman</li>
+            <li><strong>Languages:</strong> Java, Python, SQL</li>
+            <li><strong>Frameworks:</strong> Spring Boot, FastAPI, Flask</li>
+            <li><strong>Concepts:</strong> REST APIs, RBAC, Async Jobs, Caching</li>
             <li>
-              <strong>Editors:</strong> IntelliJ, VS Code, Jupyter Notebook
+              <strong>Scalability:</strong> PostgreSQL connection pooling, Kafka-based workflows
             </li>
-            <li><strong>Other:</strong> AWS, Agile Development</li>
+            <li><strong>Ops:</strong> Database migrations, Config-driven deployments</li>
           </ul>
         </div>
 
+        <!-- AI / ML -->
+<div class="skill-card">
+  <div class="icon-circle"><i class="fas fa-brain"></i></div>
+  <h3>AI / ML</h3>
+  <p>
+    Designing and deploying end-to-end machine learning pipelines, including
+    retrieval-augmented generation systems and model-driven workflows.
+  </p>
+  <ul>
+    <li>
+      <strong>RAG Systems:</strong> Embedding generation, vector indexing, semantic retrieval, and response orchestration
+    </li>
+    <li>
+      <strong>Models:</strong> Machine Learning, Deep Learning, Time Series, NLP, and Large Language Models
+    </li>
+    <li>
+      <strong>Techniques:</strong> Dimensionality Reduction using PCA, Feature Engineering, Model Evaluation and Error Analysis
+    </li>
+    <li>
+      <strong>Frameworks & Libraries:</strong> PyTorch, TensorFlow, Hugging Face Transformers, LangChain, spaCy, NLTK, scikit-learn
+    </li>
+    <li>
+      <strong>Vector Databases:</strong> ChromaDB for embedding storage and similarity search
+    </li>
+  </ul>
+</div>
+
+        <!-- DIGITAL IMAGE PROCESSING -->
+        <div class="skill-card">
+          <div class="icon-circle"><i class="fas fa-image"></i></div>
+          <h3>Digital Image Processing</h3>
+          <p>
+            Working with image pipelines and vision techniques for real-world
+            inputs.
+          </p>
+          <ul>
+            <li><strong>Libraries:</strong> OpenCV, MediaPipe</li>
+            <li>
+              <strong>Skills:</strong> Filtering, Edge Detection, Thresholding, Feature Extraction, Landmark-based pipelines
+            </li>
+            <li>
+              <strong>Applications:</strong> Image pre-processing for ML and automation workflows
+            </li>
+          </ul>
+        </div>
+
+        <!-- DATABASES -->
         <div class="skill-card">
           <div class="icon-circle"><i class="fas fa-database"></i></div>
-          <h3>Databases</h3>
-          <p>Designing optimized relational and document-based databases.</p>
+          <h3>Databases & Data Engineering</h3>
+          <p>
+            Relational modeling, query performance, and scalable data access
+            patterns.
+          </p>
           <ul>
-            <li><strong>Relational:</strong> MySQL, PL/SQL</li>
-            <li><strong>NoSQL:</strong> MongoDB (basic)</li>
-            <li><strong>Designs:</strong> 3NF, BCNF Normalization</li>
+            <li><strong>Relational:</strong> PostgreSQL, MySQL</li>
+            <li><strong>NoSQL:</strong> MongoDB</li>
+            <li>
+              <strong>Relational Design:</strong> ER Modeling, Normalization 3NF and BCNF, Indexing Strategy
+            </li>
+            <li>
+              <strong>Scalability:</strong> SQL connection pool management, query tuning, migrations
+            </li>
+            <li><strong>Vector:</strong> ChromaDB collections, embeddings, retrieval</li>
+          </ul>
+        </div>
+
+        <!-- TOOLS / DEVOPS -->
+        <div class="skill-card">
+          <div class="icon-circle"><i class="fas fa-screwdriver-wrench"></i></div>
+          <h3>Engineering Tools</h3>
+          <p>Tooling for building, shipping, and operating software.</p>
+          <ul>
+            <li><strong>Version Control:</strong> Git, GitHub</li>
+            <li><strong>API Testing:</strong> Postman</li>
+            <li><strong>Containerization:</strong> Docker, Podman</li>
+            <li><strong>Messaging:</strong> Kafka</li>
+            <li><strong>IDE / Notebook:</strong> VS Code, IntelliJ, Jupyter Notebook</li>
+          </ul>
+        </div>
+
+        <!-- PROBLEM SOLVING / SYSTEM DESIGN -->
+        <div class="skill-card">
+          <div class="icon-circle"><i class="fas fa-code"></i></div>
+          <h3>Problem Solving, DSA & System Design</h3>
+          <p>
+            Strong fundamentals with a focus on building systems that hold up in
+            production.
+          </p>
+          <ul>
+            <li><strong>Core:</strong> Java OOP and DSA, Python</li>
+            <li>
+              <strong>System Design:</strong> API design, scalability patterns, reliability trade-offs
+            </li>
+            <li><strong>Platforms:</strong> LeetCode, HackerRank</li>
+            <li><strong>Topics:</strong> Data Structures, Algorithms, Complexity Analysis</li>
           </ul>
         </div>
       </div>
     </section>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-container">
@@ -158,30 +230,27 @@
         </div>
 
         <div class="footer-right">
-          <a
-            href="https://github.com/shreya-t004"
-            target="_blank"
-            title="GitHub"
-            ><i class="fab fa-github"></i
-          ></a>
+          <a href="https://github.com/shreya-t004" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
           <a
             href="https://linkedin.com/in/shreya-tripathi-6a379a218"
             target="_blank"
             title="LinkedIn"
-            ><i class="fab fa-linkedin"></i
-          ></a>
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
           <a
             href="https://leetcode.com/u/shreya_t004/"
             target="_blank"
             title="LeetCode"
-            ><i class="fas fa-code"></i
-          ></a>
+          >
+            <i class="fas fa-code"></i>
+          </a>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        © 2025 Shreya Tripathi. All rights reserved.
-      </div>
+      <div class="footer-bottom">© 2026 Shreya Tripathi. All rights reserved.</div>
     </footer>
   </body>
 </html>
